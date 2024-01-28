@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты без указанного продукта</title>
+</head>
+<body>
+    <h1>Рецепты без указанного продукта</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Имя</th>
+        </tr>
+        {% for recipe in recipes %}
+        <tr>
+            <td>{{ recipe.id }}</td>
+            <td>{{ recipe.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
